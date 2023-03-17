@@ -84,7 +84,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:background="@drawable/background_rounded_corner_movies"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/placeholder_venom" />
+                        app:srcCompat="@drawable/placeholder_black_widow" />
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/dm_sans"
-                                    android:text="Venom"
+                                    android:text="Black Widow"
                                     android:textColor="@color/white"
                                     android:textSize="@dimen/text_regular_2x"
                                     android:textStyle="bold" />
