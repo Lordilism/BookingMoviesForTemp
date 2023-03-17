@@ -58,14 +58,14 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/ivLogoMovies"
-                    app:srcCompat="@drawable/placeholder_venom"
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/margin_medium"
                     android:layout_marginTop="@dimen/margin_medium"
                     android:layout_marginBottom="@dimen/margin_medium"
                     android:background="@drawable/background_rounded_corner_movies"
-                    android:scaleType="fitXY" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/placeholder_black_widow" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/dm_sans"
-                                android:text="Venom"
+                                android:text="Black Widow"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/text_regular_2x"
                                 android:textStyle="bold" />

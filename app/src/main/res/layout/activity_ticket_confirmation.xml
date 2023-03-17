@@ -101,10 +101,10 @@
                                 android:id="@+id/llTitleFromTicketInformation"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"
                                 android:layout_marginStart="@dimen/margin_medium_2"
                                 android:layout_marginTop="@dimen/margin_medium"
                                 android:layout_marginEnd="@dimen/margin_medium"
+                                android:layout_weight="1"
                                 android:orientation="horizontal">
 
                                 <androidx.appcompat.widget.AppCompatTextView
@@ -138,10 +138,10 @@
                                 android:id="@+id/llCinemaNameFromTicketInformation"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1"
                                 android:layout_marginStart="@dimen/margin_medium_2"
                                 android:layout_marginTop="@dimen/margin_medium"
-                                android:layout_marginEnd="@dimen/margin_medium">
+                                android:layout_marginEnd="@dimen/margin_medium"
+                                android:layout_weight="1">
 
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_width="wrap_content"
@@ -187,13 +187,14 @@
 
 
                         </LinearLayout>
+
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginBottom="@dimen/margin_medium"
                             android:layout_marginStart="@dimen/margin_medium_2"
                             android:layout_marginTop="8dp"
+                            android:layout_marginBottom="@dimen/margin_medium"
                             android:fontFamily="@font/dm_sans"
                             android:text="Gold-G8,G7"
                             android:textColor="@color/white"
@@ -201,14 +202,8 @@
                     </RelativeLayout>
 
 
-
-
-
-
-
-
-
                 </RelativeLayout>
+
                 <LinearLayout
                     android:id="@+id/llMoreInfo"
                     android:layout_width="match_parent"
@@ -224,15 +219,15 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="start">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/ivCalendar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingEnd="@dimen/margin_medium"
                             android:layout_marginEnd="@dimen/margin_small"
+                            android:paddingEnd="@dimen/margin_medium"
                             app:srcCompat="@drawable/ic_baseline_calendar_month_accent_24dp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
@@ -260,9 +255,9 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
-                            android:layout_marginTop="@dimen/margin_small"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/ivClock"
+                            android:layout_marginTop="@dimen/margin_small"
                             android:text="3:30 PM"
                             android:textAlignment="center"
                             android:textColor="@color/colorSecondaryText"
@@ -306,57 +301,59 @@
             android:id="@+id/ivQrCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/placeholder_qr_code"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/flTicketInformation"
-            android:layout_marginTop="@dimen/margin_medium_2" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:srcCompat="@drawable/placeholder_qr_code" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvQrCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/dm_sans"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_medium"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/ivQrCode"
-            android:text="WAG5LP1C"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:fontFamily="@font/dm_sans"
+            android:text="WAG5LP1C"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
         <RelativeLayout
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/tvQrCode"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content">
+            android:layout_centerHorizontal="true">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTpin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorSecondaryText"
                 android:fontFamily="@font/dm_sans"
-                android:textStyle="bold"
-                android:text="TPIN:"/>
+                android:text="TPIN:"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold" />
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/dm_sans"
-                android:textColor="@color/white"
                 android:layout_toEndOf="@id/tvTpin"
-                android:text="WKCSL96"/>
+                android:fontFamily="@font/dm_sans"
+                android:text="WKCSL96"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/margin_medium"
-            android:text="Done"
-            android:textColor="@color/black"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/margin_medium_2"
             android:backgroundTint="@color/colorAccent"
-            android:paddingEnd="@dimen/margin_medium"/>
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:text="Done"
+            android:textColor="@color/black" />
 
 
     </RelativeLayout>
