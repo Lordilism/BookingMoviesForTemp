@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAppBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background_ticket_cancelion"
+        android:padding="@dimen/margin_medium_2"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleCancelion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/white"
+
+            android:text="Ticket Cancelation Policy"/>
+
+        <LinearLayout
+            android:id="@+id/llRefund"
+            android:layout_below="@id/tvTitleCancelion"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_food_checkout_white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/margin_small"
+                android:textSize="@dimen/text_regular_2x"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/lbl_100_refund_on_f_b"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRefundForTicket"
+            android:layout_below="@id/llRefund"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_ticket_cancelion"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:textStyle="bold"
+
+                android:textSize="@dimen/text_regular_2x"
+                android:paddingStart="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/lbl_up_to_75_refund_for_tickets"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContainerforCancelion"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/llRefundForTicket"
+            android:layout_below="@id/llRefundForTicket"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/colorSecondaryText"
+                android:text="@string/lbl_75_refund_until_2_hours_before_show_start_time"
+                android:fontFamily="@font/inter_medium"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/colorSecondaryText"
+                android:text="@string/lbl_50_refund_between_2_hours_and_20_minutes_before_show_start_time"
+                android:fontFamily="@font/inter_medium"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_below="@id/llContainerforCancelion"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1."
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="@dimen/text_regular"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:text="@string/lbl_refund_not_available_for_convenience_fees_vouchers_gift_cards_taxes_etc"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRuleNumbers"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2."
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="@dimen/text_regular"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:text="@string/lbl_no_cancelation_within_20minute_of_show_start_time"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCloseDialog"
+                android:layout_width="match_parent"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

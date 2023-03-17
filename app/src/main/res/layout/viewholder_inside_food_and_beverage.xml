@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_small">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_cross_accent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvItemNameFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivCross"
+        android:layout_marginStart="@dimen/margin_card_medium"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_toEndOf="@id/ivCross"
+        android:fontFamily="@font/dm_sans"
+        android:text="Potatoe Chips (Qt.1)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000Ks"
+        android:textStyle="bold"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/colorSecondaryText"
+
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

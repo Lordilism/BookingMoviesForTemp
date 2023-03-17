@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="22dp"
+        android:layout_margin="@dimen/margin_card_medium"
+        android:elevation="@dimen/margin_medium_2"
+        android:backgroundTintMode="multiply"
+        app:cardElevation="@dimen/margin_xxlarge">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBannerKFC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/placeholder_kfc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_banner" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlPercentDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDiscountPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="10%"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/text_heading_2x" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tvDiscountPercent"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_toEndOf="@id/tvDiscountPercent"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Off"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/text_regular_3x" />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDiscountTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/rlPercentDiscount"
+                    android:layout_below="@id/rlPercentDiscount"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="with KBZ debit Card"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/tvDiscountTxt"
+                    android:layout_alignStart="@id/tvDiscountTxt"
+                    app:srcCompat="@drawable/placeholder_debit_cards" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

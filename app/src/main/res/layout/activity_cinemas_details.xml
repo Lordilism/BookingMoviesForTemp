@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.TicketDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBackBtnFromTicketsDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_white_24dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/dm_sans"
+                    android:gravity="center_vertical"
+                    android:text="@string/lbl_cinema_details"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="@dimen/margin_medium_2"
+                    app:srcCompat="@drawable/ic_baseline_star_border_white_24dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/flFromCinemaDetails"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_height="200dp">
+                <VideoView
+                    android:id="@+id/playerViewCinemaDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true" />
+
+                <View
+                    android:id="@+id/playBtnCinemaDetails"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_chip"/>
+
+
+
+
+
+
+            </FrameLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flFromCinemaDetails"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleMoviesFromCinemaDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/lbl_jcgv_junction_city"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLocationOfCinemaDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitleMoviesFromCinemaDetails"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawableEnd="@drawable/ic_map"
+                    android:drawablePadding="@dimen/margin_medium_2"
+
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Q5H3+JPP, Corner of, Bogyoke\nLann, Yangon "
+                    android:textColor="@color/white"
+                    app:drawableTint="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFacilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLocationOfCinemaDetails"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/lbl_facilities"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvParking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFacilities"
+                    android:drawableStart="@drawable/ic_parking_cinema_details"
+                    android:drawablePadding="@dimen/margin_medium"
+                    android:drawableTint="@color/colorAccent"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/lbl_parking"
+                    android:textColor="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOnlineFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFacilities"
+                    android:layout_marginStart="@dimen/margin_card_medium_2"
+                    android:layout_toEndOf="@id/tvParking"
+                    android:drawableStart="@drawable/ic_online_food_cinema_details"
+                    android:drawablePadding="@dimen/margin_card_medium"
+                    android:drawableTint="@color/colorAccent"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/lbl_online_food"
+                    android:textColor="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFacilities"
+                    android:layout_marginStart="@dimen/margin_card_medium_2"
+                    android:layout_toEndOf="@id/tvOnlineFood"
+                    android:drawableStart="@drawable/ic_wheel_chair_cinema_details"
+                    android:drawablePadding="@dimen/margin_card_medium"
+                    android:drawableTint="@color/colorAccent"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/lbl_wheel_chair"
+                    android:textColor="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTicketCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvParking"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:drawableStart="@drawable/ic_cancelion_from_details_cinema"
+                    android:drawablePadding="@dimen/margin_card_medium"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Ticket Cancelion"
+                    android:textColor="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSafety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTicketCancel"
+                    android:layout_marginTop="@dimen/margin_card_medium_2"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Safety"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSafety"
+                    app:singleLine="false"
+                    android:layout_marginTop="@dimen/margin_card_medium_2">
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_thermanal_scanning"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_contactless_security_check"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_santization_before_every_show"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_disposable_3d_glass"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_contactless_food_services"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_package_food"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/lbl_deep_cleaning_of_rest_room"
+                        app:chipCornerRadius="@dimen/margin_medium"
+                        app:chipMinHeight="@dimen/margin_large"
+                        app:chipMinTouchTargetSize="@dimen/margin_xlarge" />
+
+
+                </com.google.android.material.chip.ChipGroup>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

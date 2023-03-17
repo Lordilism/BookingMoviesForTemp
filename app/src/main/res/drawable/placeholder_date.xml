@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <bitmap android:src="@drawable/ic_date_card"
+            android:tint="#D7D7D7"/>
+    </item>
+    <item android:width="@dimen/margin_medium_2"
+        android:height="@dimen/margin_small"
+        android:gravity="center_horizontal"
+        android:top="@dimen/margin_medium">
+        <shape android:shape="rectangle"
+            android:useLevel="true"
+            android:tint="@color/colorPrimary">
+            <size android:width="2dp"
+                android:height="1dp"/>
+            <corners android:radius="2dp"/>
+
+
+        </shape>
+    </item>
+
+</layer-list>

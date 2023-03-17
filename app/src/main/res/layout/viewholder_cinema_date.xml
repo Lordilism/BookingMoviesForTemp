@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:id="@+id/rlViewholder"
+    android:gravity="center_vertical"
+    android:background="@drawable/background_shape_colored_date"
+    android:layout_margin="@dimen/margin_card_medium_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShowTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:fontFamily="@font/inter_medium"
+        android:text="9:30 AM"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:fontFamily="@font/inter_medium"
+        android:text="3D"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvShowTime"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:fontFamily="@font/inter_medium"
+        android:text="Screen 1"
+        android:layout_below="@id/tv3d"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:fontFamily="@font/inter_medium"
+        android:text="21 Available"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvScreen"
+        />
+
+
+
+
+</RelativeLayout>

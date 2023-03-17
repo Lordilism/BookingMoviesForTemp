@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_3"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/llNowShowing"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMovieImageFromNowShowing"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/placeholder_black_widow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_now_showing"
+            android:elevation="@dimen/margin_xxlarge" />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDueDate"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/background_due_date"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:gravity="center"
+                android:fontFamily="@font/dm_sans"
+                android:text=" 8th\nAUG"
+                android:textSize="@dimen/text_smallest"
+                android:textStyle="bold" />
+
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llNowShowing">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:fontFamily="@font/inter_light"
+            android:text="Black Widow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:fontFamily="@font/inter_light"
+            android:text="9.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/tvRating"
+            android:layout_alignBottom="@id/tvRating"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_toStartOf="@id/tvRating"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/placeholder_imdb" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleMovies"
+            android:layout_alignStart="@id/tvTitleMovies"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:fontFamily="@font/inter_light"
+            android:text="U/A"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_smaller"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/flDotContainer"
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@id/tvUA"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/tvUA">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/placeholder_eclipse" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvUA"
+
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/flDotContainer">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2D, 3D, 3D IMAX, DBOX\n3D"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

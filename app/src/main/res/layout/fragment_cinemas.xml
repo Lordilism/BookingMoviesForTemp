@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.fragments.CinemasFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llShowHintAboutCinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAvailableOrNot"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Available"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_small"
+                app:icon="@drawable/ic_baseline_circle_white_24dp"
+                android:fontFamily="@font/inter_light"
+                app:iconGravity="textStart"
+                android:textStyle="bold"
+                app:iconTint="@color/colorAccent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Filling Fast"
+                android:fontFamily="@font/inter_light"
+                android:textAllCaps="false"
+                android:textColor="@color/colorFillingFast"
+                android:textSize="@dimen/text_small"
+                app:icon="@drawable/ic_baseline_circle_white_24dp"
+                app:iconGravity="textStart"
+                android:textStyle="bold"
+                app:iconTint="@color/colorFillingFast" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Almost Full"
+                android:fontFamily="@font/inter_light"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAlmostFull"
+                android:textSize="@dimen/text_small"
+                app:icon="@drawable/ic_baseline_circle_white_24dp"
+                app:iconGravity="textStart"
+                app:iconTint="@color/colorAlmostFull" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFromCinemaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llShowHintAboutCinema"/>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

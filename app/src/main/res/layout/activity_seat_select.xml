@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.SeatSelectActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnBackFromSeatSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_white_24dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="170dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true">
+
+            <FrameLayout
+                android:id="@+id/flScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/placeholder_screen" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dm_sans"
+                    android:letterSpacing="0.1"
+                    android:shadowColor="@color/white"
+                    android:shadowRadius="8"
+                    android:text="SCREEN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_2x" />
+            </FrameLayout>
+
+
+            <include
+                android:id="@+id/vpNormal"
+                layout="@layout/viewpod_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flScreen" />
+
+            <include
+                android:id="@+id/vpExecutive"
+                layout="@layout/viewpod_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vpNormal" />
+
+            <include
+                android:id="@+id/vpPremium"
+                layout="@layout/viewpod_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vpExecutive" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/llFromSeatSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAvailableOrNot"
+            android:padding="@dimen/margin_card_medium"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_available"
+                android:drawablePadding="@dimen/margin_small"
+                android:fontFamily="@font/inter_medium"
+                android:text="Available"
+                android:textColor="@color/colorSecondaryText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_available"
+                android:drawablePadding="@dimen/margin_small"
+                android:drawableTint="@color/colorSecondaryText"
+                android:fontFamily="@font/inter_medium"
+                android:text="Taken"
+                android:textColor="@color/colorSecondaryText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_available"
+                android:drawablePadding="@dimen/margin_small"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/inter_medium"
+                android:text="Your Selection"
+                android:textColor="@color/colorSecondaryText" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarSeat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_centerHorizontal="true"
+            android:progress="80"
+            android:progressTint="@color/colorSecondaryText"
+            android:progressBackgroundTint="@color/colorSecondaryText"
+            android:layout_below="@id/llFromSeatSelect"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/seekBarSeat"
+            android:layout_alignBottom="@id/seekBarSeat"
+            android:layout_alignTop="@id/seekBarSeat"
+            app:srcCompat="@drawable/ic_baseline_add_grey_24dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekBarSeat"
+            android:layout_alignBottom="@id/seekBarSeat"
+            android:layout_alignTop="@id/seekBarSeat"
+            app:srcCompat="@drawable/ic_baseline_remove_grey_24dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBuyTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:paddingEnd="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_xlarge"
+            app:srcCompat="@drawable/ic_buy_tickets" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnBuyTickets"
+            android:layout_alignBottom="@id/btnBuyTickets"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_toStartOf="@id/btnBuyTickets"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="@dimen/margin_medium">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSeatSelectedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="2 tickets"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSeatSelectedNumber"
+                android:fontFamily="@font/inter_medium"
+                android:text="17000 KS"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:drawable="@drawable/vector_date_head"
+        android:gravity="center_horizontal|center"
+        android:width="10dp"
+        android:bottom="2dp"
+        android:height="10dp">
+
+    </item>
+    <item android:drawable="@drawable/vector_head"
+        android:gravity="center_horizontal"
+        android:top="10dp"
+        android:height="1dp"
+        android:width="5dp"/>
+    <item android:drawable="@drawable/vector_date"
+        android:width="5dp"
+        android:top="10dp"
+        android:gravity="end|fill"
+        android:height="5dp"/>
+
+</layer-list>

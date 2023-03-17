@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.TicketConfirmationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center_horizontal"
+            android:text="Ticket Confirmation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/flTicketInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHeader"
+            android:layout_marginTop="@dimen/margin_medium_2">
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:background="@drawable/ic_baseline_circle_24"
+                android:elevation="@dimen/margin_medium_2" />
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:background="@drawable/ic_baseline_circle_24"
+                android:elevation="@dimen/margin_medium_2" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:elevation="@dimen/margin_medium">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@drawable/custom_placeholder_checkout" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:background="@drawable/background_ticket_information">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivLogoMovies"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:background="@drawable/background_rounded_corner_movies"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/placeholder_venom" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/ivLogoMovies">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:id="@+id/llTitleFromTicketInformation"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/margin_medium_2"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:layout_marginEnd="@dimen/margin_medium"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text="Venom"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_regular_2x"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text=" (3D)"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_regular_2x" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text=" (U/A)"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_regular_2x" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llCinemaNameFromTicketInformation"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/margin_medium_2"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:layout_marginEnd="@dimen/margin_medium">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text="JCGV : Junction City"
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llTicketNumberFromTcketInformation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium_2"
+                                android:layout_marginTop="@dimen/margin_medium"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text="@string/lbl_m_ticket_2"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text="2"
+                                    android:textColor="@color/colorAccent" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dm_sans"
+                                    android:text=")"
+                                    android:textColor="@color/colorSecondaryText" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginStart="@dimen/margin_medium_2"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/dm_sans"
+                            android:text="Gold-G8,G7"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/llMoreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_3"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium_3"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivCalendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/margin_medium"
+                            android:layout_marginEnd="@dimen/margin_small"
+                            app:srcCompat="@drawable/ic_baseline_calendar_month_accent_24dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivCalendar"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:text="Sat, 18 Jun, 2022"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/text_small" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivClock"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_access_time_accent_24dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivClock"
+                            android:text="3:30 PM"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/text_small" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_location_on_accent_24dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivLocation"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:text="Q5H3+JPP, Corner of, Bogyoke Lann, Yangon "
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/text_small" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/placeholder_qr_code"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/flTicketInformation"
+            android:layout_marginTop="@dimen/margin_medium_2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/dm_sans"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ivQrCode"
+            android:text="WAG5LP1C"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tvQrCode"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondaryText"
+                android:fontFamily="@font/dm_sans"
+                android:textStyle="bold"
+                android:text="TPIN:"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dm_sans"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/tvTpin"
+                android:text="WKCSL96"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_medium"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingEnd="@dimen/margin_medium"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

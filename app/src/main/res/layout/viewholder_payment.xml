@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/margin_small"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/background_payment"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPaymentLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="@dimen/margin_medium"
+                    app:srcCompat="@drawable/placeholder_payment_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_toEndOf="@id/ivPaymentLogo"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:text="UPI"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_white_24dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/backgorund_ns_section.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/background_cancelion_policy.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_card.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_chip.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/background_due_date.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_food.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_genre.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_input_edt_text.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/background_notify.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_ns_cs.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/background_otp.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/background_payment.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_rounded_corner_movies.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_shape_colored_date.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/background_sheet.xml" value="0.103" />
+        <entry key="app/src/main/res/drawable/background_spinner.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_ticket_cancelion.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/bottom_nav_color.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/custom_line.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/custom_placeholder_checkout.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/down_arrow.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/gradient_banner.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/gradient_movies_details.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/gradient_now_showing.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_avilable.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_back_btn.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_black_20dp.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_white_24dp.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_month_accent_24dp.xml" value="0.136" />
+        <entry key="app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_circle_white_24dp.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_filter_alt_accent_24dp.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notifications_white_24dp.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_colored_24dp.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_white_24dp.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_baseline_remove_circle_accent_12dp.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_white_24dp.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_custom_date_card_.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_vector.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ico.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/placeholder_date.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/selected_tab.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/shape_movies.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/tab_indicator.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/tab_rectangle.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/tab_selectoe.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/tab_text_selector.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/top_arrow.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_about_movie.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/activity_check_out.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/layout/activity_cinemas_details.xml" value="0.23261139033844114" />
+        <entry key="app/src/main/res/layout/activity_date_select.xml" value="0.22502870264064295" />
+        <entry key="app/src/main/res/layout/activity_get_otpactivity.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_grab_bite.xml" value="0.24425720214843752" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.21754302978515627" />
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_movies_details.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.21347305862991905" />
+        <entry key="app/src/main/res/layout/activity_pick_location.xml" value="0.3058161350844278" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.21388888888888888" />
+        <entry key="app/src/main/res/layout/activity_seat_select.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/activity_ticket_confirmation.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_ticket_details.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/booking_success.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/demo_layout.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/dialog_ticket_cancelion_policy.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/fragment_cinemas.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_comming_soon.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_movies.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_now_showing.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_tickets.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.3880096435546875" />
+        <entry key="app/src/main/res/layout/view_item_banner.xml" value="0.339617919921875" />
+        <entry key="app/src/main/res/layout/viewholder_cast_list.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/viewholder_cinema_date.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/viewholder_cinema_details.xml" value="0.2212133656377378" />
+        <entry key="app/src/main/res/layout/viewholder_date.xml" value="0.4382980346679688" />
+        <entry key="app/src/main/res/layout/viewholder_food.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/viewholder_food_and_beverage.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/viewholder_inside_food_and_beverage.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/viewholder_now_showing.xml" value="0.25081024169921873" />
+        <entry key="app/src/main/res/layout/viewholder_payment.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/viewholder_profile.xml" value="0.20194199173538774" />
+        <entry key="app/src/main/res/layout/viewholder_seat.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/viewholder_ticket_tab.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/viewpod_movies.xml" value="0.2274962429189088" />
+        <entry key="app/src/main/res/layout/viewpod_movies_test.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/viewpod_seat.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/menu/appbar_menu.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.2578125" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.24270833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
